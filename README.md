@@ -5,8 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-
+* Ruby version 
+  ruby 2.7.8p225 (2023-03-30 revision 1f4d455848) [x86_64-linux]
+  rails 5.2.8.1
+  
 * System dependencies
 
 * Configuration
