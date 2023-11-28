@@ -10,7 +10,11 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
       price: 19.95
     }
   end
-
+  test "delet products cart" do
+    assert_difference('Product.count',0) do
+      delete product_url(product(:two))
+    end
+  end
   test "should get index" do
     #puts products_url
     get products_url

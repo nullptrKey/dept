@@ -1,13 +1,14 @@
 require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase
-  fixtures :products
+  #fixtures :products
   # test "the truth" do
   #   assert true
   # end
   test "test1" do
     #获取产品标题
     p products(:ruby)
+    puts "1111"
   end
 
 end

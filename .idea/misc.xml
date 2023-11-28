@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" project-jdk-name="ruby-3.0.5-p211" project-jdk-type="RUBY_SDK" />
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="65" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/controllers/store_controller.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="688" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/Gemfile" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="176" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/assets/stylesheets/store.scss" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="725" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="211" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/assets/javascripts/store.coffee" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="709" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="733" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/store/index.html.erb" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>

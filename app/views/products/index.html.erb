@@ -17,7 +17,12 @@
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 
         <td class="image">
-          <%= image_tag(product.image_url, class: 'list_image') %>
+          <% if product.image_url.present? %>
+            <%= image_tag(product.image_url, class: 'list_image') %>
+          <% else %>
+            <!-- Placeholder image or alternative content when image_url is nil -->
+            <div class="placeholder_image">No Image</div>
+          <% end %>
         </td>
 
         <td class="description">
@@ -37,6 +42,9 @@
                            product, 
                           method: :delete,
                           data: { confirm: 'Are you sure?' } %>
+            </li>
+            <li>
+            <%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
             </li>
           </ul>
         </td>

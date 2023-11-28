@@ -1,0 +1,43 @@
+<p id="notice"><% notice %></p>
+<h1>Your Pragmatic Catalog <%= @current_time %></h1>
+<h1>会话ID<%= session.to_hash %></h1>
+<table class="table">
+    <thead>
+    <tr>
+      <th scope="col">IMAGE</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col">Add Cart</th>
+    </tr>
+    </thead>
+    <%= cache @products do %>
+      <%= @products.each do |product| %>
+       <%= cache product do %>
+          <tbody>
+            <td>
+              <% if product.image_url.present? %>
+                <%= image_tag(product.image_url, alt: 'Description of the image') %>
+              <% else %>
+                <!-- Placeholder image or alternative content when image_url is nil -->
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+              <% end %>
+            </td>
+            <td>
+              <h3><%= product.title %></h3>
+            </td>
+            <td>
+              <%= sanitize(product.description) %>
+            </td>
+          <td>
+            <%= number_to_currency(product.price) %>
+          </td>
+          <td>
+            <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+          </td>
+          </tbody>
+       <% end %>
+      <% end %>
+    <% end %> 
+</table>
+
